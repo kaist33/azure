@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<!-- saved from url=(0118)https://docs.microsoft.com/ko-kr/learn/paths/az-900-describe-cloud-concepts/?WT.mc_id=dotnet-21151-cxa&ocid=AID3027813 -->
+<html class="is-full hasPageActions hasBreadcrumb learningpath has-default-focus js-focus-visible theme-light" lang="ko-kr" dir="ltr" data-css-variable-support="true" data-authenticated="true" data-auth-status-determined="true" data-target="docs" x-ms-format-detection="none" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Azure 기본 사항 파트 1: 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://docs.microsoft.com/ko-kr/learn/paths/az-900-describe-cloud-concepts/">
+			<meta property="og:description" content="이 학습 경로에서는 Azure 클라우드 컴퓨팅 및 Azure 아키텍처의 기본 사항을 소개합니다. AZ-900을 준비하세요.">
+		<meta property="og:image" content="https://docs.microsoft.com/learn/achievements/az-900-describe-cloud-concepts-social.png">
+		<meta property="og:image:alt" content="Azure 기본 사항 파트 1: 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn | Microsoft Docs">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@docsmsft">
+
+	<meta name="color-scheme" content="light dark">
+
+
+	<meta name="uid" content="learn.az-900-describe-cloud-concepts">
+<meta name="adobe-target" content="true">
+<meta name="author" content="Randall-Knapp">
+<meta name="breadcrumb_path" content="/learn/breadcrumb/toc.json">
+<meta name="clicktale" content="true">
+<meta name="depot_name" content="Docs.learn-pr">
+<meta name="description" content="이 학습 경로에서는 Azure 클라우드 컴퓨팅 및 Azure 아키텍처의 기본 사항을 소개합니다. AZ-900을 준비하세요.">
+<meta name="document_id" content="78e25f4c-6e03-4c8a-b182-089c7540565c">
+<meta name="document_version_independent_id" content="236dc93e-1cb7-cff9-a0d5-44352a0b4df1">
+<meta name="gitcommit" content="https://github.com/MicrosoftDocs/learn-pr.ko-KR/blob/3f37f3229de99fba5bc4796066e275c648fb490c/learn-pr/paths/az-900-describe-cloud-concepts/index.yml">
+<meta name="locale" content="ko-kr">
+<meta name="ms.author" content="rknapp">
+<meta name="ms.contentlocale" content="ko-KR">
+<meta name="ms.date" content="09/14/2020">
+<meta name="ms.lasthandoff" content="03/24/2021">
+<meta name="ms.locfileid" content="105001295">
+<meta name="ms.openlocfilehash" content="afc25810015a2fa1c4dbbdfd878b1a0b01a5c660">
+<meta name="ms.prod" content="learning-azure">
+<meta name="ms.sourcegitcommit" content="7be52c367e9cebfcf59730d320014732693261ab">
+<meta name="ms.topic" content="interactive-tutorial">
+<meta name="ms.translationtype" content="HT">
+<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/learn-pr.ko-KR/blob/live/learn-pr/paths/az-900-describe-cloud-concepts/index.yml">
+<meta name="search.ms_docsetname" content="learn-pr">
+<meta name="search.ms_product" content="Docs">
+<meta name="search.ms_sitename" content="Docs">
+<meta name="site_name" content="Docs">
+<meta name="uhfHeaderId" content="MSDocsHeader-Learn">
+<meta name="updated_at" content="2021-03-25 04:32 AM">
+<meta name="page_type" content="learn">
+<meta name="page_kind" content="path">
+
+
+<link href="https://docs.microsoft.com/ko-kr/learn/paths/az-900-describe-cloud-concepts/" rel="canonical">
+	<title>Azure 기본 사항 파트 1: 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn | Microsoft Docs</title>
+
+		<link rel="stylesheet" href="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/d84467c8.site-ltr.css">
+
+	
+
+
+	<script async="" defer="" crossorigin="anonymous" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/lux.js.다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/analytics.js.다운로드"></script><script id="msdocs-script">
+	var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'ko-kr',
+			contentDir: 'ltr',
+			userLocale: 'ko-kr',
+			userDir: 'ltr',
+			pageTemplate: 'LearningPath',
+			brand: 'azure',
+			context: {
+
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			feedbackSystem: 'None',
+			feedbackGitHubRepo: '',
+			feedbackProductUrl: '',
+			contentGitUrl: 'https://github.com/MicrosoftDocs/learn.ko-kr/blob/master/learn-pr/paths/az-900-describe-cloud-concepts/index.yml',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasBookmark: false,
+			hasShare: false,
+			hasRecommendations: false,
+		},
+		functions:{}
+	};
+	</script>
+	<script src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/wcp-consent.js.다운로드"></script>
+	<script src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/ms.jsll-3.js.다운로드"></script>
+	<script>window.onedsAwa = window.awa; delete window.awa;</script>	
+	<script src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/jsll-4.js.다운로드"></script>
+	<script nomodule="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/bluebird.min.js.다운로드" integrity="sha384-aD4BDeDGeLXLpPK4yKeqtZQa9dv4a/7mQ+4L5vwshIYH1Mc2BrXvHd32iHzYCQy5" crossorigin="anonymous"></script>
+	<script nomodule="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/fetch.umd.min.js.다운로드" integrity="sha384-EQIXrC5K2+7X8nGgLkB995I0/6jfAvvyG1ieZ+WYGxgJHFMD/alsG9fSDWvzb5Y1" crossorigin="anonymous"></script>
+	<script nomodule="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/template.min.js.다운로드" integrity="sha384-1zKzI6ldTVHMU7n0W2HpE/lhHI+UG4D9IIaxbj3kT2UhCWicdTuJkTtnKuu0CQzN" crossorigin="anonymous"></script>
+	<script nomodule="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/url.min.js.다운로드" integrity="sha384-vn7xBMtpSTfzaTRWxj0kVq0UcsbBrTOgZ/M1ISHqe1V358elYva+lfiEC+T8jLPc" crossorigin="anonymous"></script>
+	<script src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/8a64e446.index-polyfills.js.다운로드"></script>
+
+		<link rel="preconnect" href="https://mscom.demdex.net/" crossorigin="">
+		<link rel="dns-prefetch" href="https://target.microsoft.com/">
+		<link rel="dns-prefetch" href="https://microsoftmscompoc.tt.omtrdc.net/">
+		<script src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/f9940c81.at-config.js.다운로드"></script>
+		<script src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/at.js.다운로드"></script>
+		<script src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/e4977716.index-docs.js.다운로드"></script><style></style>
+<script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/t.js.다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/asa.js.다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/asa.js(1).다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/asa.js(2).다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/asa.js(3).다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/asa.js(4).다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/asa.js(5).다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/asa.js(6).다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/asa.js(7).다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/asa.js(8).다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/asa.js(9).다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/asa.js(10).다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/asa.js(11).다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/asa.js(12).다운로드"></script><script async="" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/asa.js(13).다운로드"></script><script async="" src="https://web.vortex.data.microsoft.com/collect/v1/asa.js?ver=%272.1%27&amp;name=%27Ms.Webi.ContentUpdate%27&amp;time=%272021-04-06T13%3A48%3A43.232Z%27&amp;os=%27Windows%27&amp;appId=%27JS%3ADocs%27&amp;-ver=%271.0%27&amp;-impressionGuid=%2701048e3e-0bca-4d8e-9f73-77e5d51cd471%27&amp;-pageName=%2778e25f4c-6e03-4c8a-b182-089c7540565c%27&amp;-uri=%27https%3A%2F%2Fdocs.microsoft.com%2Fko-kr%2Flearn%2Fpaths%2Faz-900-describe-cloud-concepts%2F%3FWT.mc_id%3Ddotnet-21151-cxa%26ocid%3DAID3027813%27&amp;-market=%27ko-kr%27&amp;-pageTags=%27%7B%22author%22%3A%22Randall-Knapp%22%2C%22depotname%22%3A%22Docs.learn-pr%22%2C%22document_version_independent_id%22%3A%22236dc93e-1cb7-cff9-a0d5-44352a0b4df1%22%2C%22gitcommit%22%3A%22https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Flearn-pr.ko-KR%2Fblob%2F3f37f3229de99fba5bc4796066e275c648fb490c%2Flearn-pr%2Fpaths%2Faz-900-describe-cloud-concepts%2Findex.yml%22%2C%22pgauth%22%3A%22rknapp%22%2C%22date%22%3A%2209%2F14%2F2020%22%2C%22lasthandoff%22%3A%2203%2F24%2F2021%22%2C%22locfileid%22%3A%22105001295%22%2C%22product%22%3A%22learning-azure%22%2C%22pgtop%22%3A%22interactive-tutorial%22%2C%22translationtype%22%3A%22HT%22%2C%22giturl%22%3A%22https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Flearn-pr.ko-KR%2Fblob%2Flive%2Flearn-pr%2Fpaths%2Faz-900-describe-cloud-concepts%2Findex.yml%22%2C%22publishtime%22%3A%222021-03-25%2004%3A32%20AM%22%2C%22contentlocale%22%3A%22ko-kr%22%2C%22highContrast%22%3A%22false%22%2C%22metaTags%22%3A%7B%7D%7D%27&amp;-pageHeight=2863&amp;-vpHeight=880&amp;-vpWidth=1920&amp;-actionType=%27R%27&amp;-behavior=0&amp;-vScrollOffset=900&amp;-hScrollOffset=0&amp;-contentVer=%272.0%27&amp;-content=%27%5B%5D%27&amp;*baseType=%27Ms.Content.ContentUpdate%27&amp;*title=%27Azure%20%EA%B8%B0%EB%B3%B8%20%EC%82%AC%ED%95%AD%20%ED%8C%8C%ED%8A%B8%201%3A%20%ED%95%B5%EC%8B%AC%20Azure%20%EA%B0%9C%EB%85%90%EC%97%90%20%EA%B4%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%98%EA%B8%B0(AZ-900)%20-%20Learn%20%7C%20Microsoft%20Docs%27&amp;*cookieEnabled=true&amp;*isJs=true&amp;*isDomComplete=false&amp;*isLoggedIn=true&amp;ext-javascript-ver=%271.1%27&amp;ext-javascript-libVer=%274.3.4%27&amp;ext-javascript-domain=%27docs.microsoft.com%27&amp;ext-javascript-msfpc=%27GUID%3D937b7f3d152e4e1fa63932ceec1f59ee%26HASH%3D937b%26LV%3D202012%26V%3D4%26LU%3D1607600165688%27&amp;ext-javascript-userConsent=true&amp;ext-user-localId=%27t%3A28B04AA0965C644B0D1845399717656E%27&amp;ext-app-userId=%27c%3Ad3abef2b-fc0a-4c98-b282-6d7edded2494%27&amp;$mscomCookies=false&amp;$nr=true"></script></head>
+
+<body lang="ko-kr" dir="ltr">
+	<div class="header-holder has-default-focus">
+		<a href="https://docs.microsoft.com/ko-kr/learn/paths/az-900-describe-cloud-concepts/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813#main" class="skip-to-main-link has-outline-color-text visually-hidden-until-focused is-fixed has-inner-focus focus-visible has-top-zero has-left-zero has-right-zero has-padding-medium has-text-centered has-body-background-medium" tabindex="1">주요 콘텐츠로 건너뛰기</a>
+		
+		<div id="ignite-banner-holder" class="has-default-focus has-overflow-hidden"></div>
+		
+		<div hidden="" id="cookie-consent-holder"></div>
+		<!-- liquid-tag banners global -->
+		<div id="headerAreaHolder" data-bi-name="header">
+<header role="banner" itemscope="itemscope" itemtype="http://schema.org/Organization"><!----> <div class="nav-bar"><!---->  <div class="nav-bar-brand">
+		<a class="nav-bar-button" itemprop="url" href="https://www.microsoft.com/" aria-label="Microsoft">
+			<div class="nav-bar-logo" role="presentation" aria-hidden="true" itemprop="logo" itemscope="itemscope">
+				<svg xmlns="http://www.w3.org/2000/svg" width="108" height="23" viewBox="72 72 337 74" preserveAspectRatio="xMidYMin slice">
+					<g data-name="MS-symbol">
+						<clippath id="a">
+							<path transform="matrix(1 0 0 -1 0 216)" d="M0 216h482V0H0z"></path>
+						</clippath>
+						<g clip-path="url(#a)">
+							<path class="has-fill-current-color has-text-subtle" d="M394.942 104.59h-10.858v25.003h-7.38V104.59h-5.182v-5.965h5.182v-4.308c0-3.254 1.06-5.92 3.178-7.998 2.12-2.079 4.835-3.118 8.15-3.118.882 0 1.666.045 2.35.135a9.37 9.37 0 011.806.407v6.296c-.24-.14-.663-.31-1.265-.512-.603-.2-1.296-.3-2.078-.3-1.528 0-2.702.476-3.526 1.43-.824.954-1.235 2.365-1.235 4.232v3.736h10.858v-6.959l7.321-2.229v9.188h7.381v5.965h-7.38v14.49c0 1.91.345 3.254 1.038 4.037.693.783 1.782 1.175 3.27 1.175.42 0 .927-.1 1.52-.3a7.178 7.178 0 001.552-.724v6.025c-.463.261-1.23.502-2.305.723a15.742 15.742 0 01-3.178.331c-3.073 0-5.378-.817-6.914-2.455-1.537-1.637-2.305-4.102-2.305-7.396zm-48.407 9.73c0 3.233.733 5.703 2.2 7.411 1.465 1.707 3.564 2.56 6.295 2.56 2.652 0 4.67-.853 6.055-2.56 1.386-1.708 2.08-4.238 2.08-7.592 0-3.334-.719-5.849-2.155-7.547-1.436-1.697-3.45-2.545-6.04-2.545-2.67 0-4.745.888-6.22 2.666-1.477 1.777-2.215 4.313-2.215 7.607m-7.592.24c0-5.12 1.446-9.177 4.338-12.17 2.892-2.993 6.91-4.489 12.05-4.489 4.841 0 8.621 1.441 11.343 4.323 2.721 2.883 4.082 6.774 4.082 11.674 0 5.021-1.447 9.018-4.338 11.99-2.892 2.973-6.829 4.458-11.81 4.458-4.8 0-8.61-1.41-11.432-4.232-2.822-2.82-4.233-6.673-4.233-11.554m-16.417-7.802c0 1.045.331 1.863.994 2.456.662.592 2.128 1.34 4.398 2.243 2.912 1.166 4.956 2.476 6.131 3.932 1.175 1.456 1.762 3.22 1.762 5.287 0 2.912-1.12 5.252-3.359 7.02-2.24 1.767-5.267 2.65-9.083 2.65-1.285 0-2.706-.155-4.263-.467-1.556-.31-2.877-.707-3.96-1.19v-7.169a17.945 17.945 0 004.277 2.198c1.526.543 2.911.814 4.157.814 1.647 0 2.862-.23 3.645-.693.784-.46 1.175-1.235 1.175-2.319 0-1.005-.406-1.853-1.22-2.546-.813-.693-2.355-1.492-4.624-2.395-2.69-1.125-4.599-2.39-5.724-3.796-1.125-1.406-1.687-3.193-1.687-5.362 0-2.792 1.11-5.086 3.33-6.884 2.217-1.797 5.095-2.696 8.63-2.696 1.084 0 2.3.12 3.645.361 1.346.242 2.47.553 3.374.934v6.93c-.964-.644-2.089-1.195-3.374-1.658-1.286-.462-2.56-.693-3.826-.693-1.386 0-2.465.271-3.238.813-.774.543-1.16 1.286-1.16 2.23m-35.066 7.562c0 3.233.733 5.703 2.2 7.411 1.465 1.707 3.564 2.56 6.295 2.56 2.652 0 4.67-.853 6.055-2.56 1.386-1.708 2.08-4.238 2.08-7.592 0-3.334-.719-5.849-2.155-7.547-1.436-1.697-3.449-2.545-6.039-2.545-2.672 0-4.745.888-6.222 2.666-1.476 1.777-2.214 4.313-2.214 7.607m-7.592.24c0-5.12 1.446-9.177 4.338-12.17 2.893-2.993 6.91-4.489 12.051-4.489 4.84 0 8.621 1.441 11.342 4.323 2.721 2.883 4.082 6.774 4.082 11.674 0 5.021-1.446 9.018-4.338 11.99-2.892 2.973-6.828 4.458-11.809 4.458-4.8 0-8.61-1.41-11.433-4.232-2.822-2.82-4.233-6.673-4.233-11.554m-3.136-16.448c.582 0 1.105.041 1.567.121.462.08.853.18 1.175.301v7.38c-.382-.28-.939-.546-1.672-.798-.733-.25-1.622-.376-2.666-.376-1.788 0-3.299.753-4.534 2.26-1.235 1.505-1.853 3.825-1.853 6.958v15.635h-7.29V98.624h7.29v4.88h.12c.663-1.687 1.667-3.007 3.013-3.96 1.346-.954 2.962-1.432 4.85-1.432m-27.956 26.18c1.084 0 2.28-.25 3.585-.754a15.06 15.06 0 003.615-1.988v6.778c-1.165.663-2.485 1.165-3.962 1.506-1.475.342-3.098.512-4.865.512-4.559 0-8.265-1.44-11.116-4.323-2.852-2.88-4.278-6.562-4.278-11.04 0-4.98 1.456-9.083 4.37-12.307 2.91-3.224 7.037-4.835 12.38-4.835 1.366 0 2.746.176 4.143.527 1.395.352 2.504.758 3.328 1.22v6.99c-1.125-.824-2.274-1.462-3.45-1.914a9.966 9.966 0 00-3.599-.678c-2.872 0-5.192.934-6.959 2.802-1.768 1.868-2.652 4.388-2.652 7.562 0 3.132.85 5.573 2.546 7.32 1.697 1.748 4.002 2.621 6.914 2.621m-22.112 5.302h-7.29V98.624h7.29zm-8.044-39.916c0-1.205.437-2.214 1.311-3.028.874-.813 1.913-1.22 3.118-1.22 1.285 0 2.35.417 3.193 1.25.844.834 1.266 1.833 1.266 2.998 0 1.185-.432 2.18-1.296 2.982-.864.804-1.918 1.205-3.163 1.205-1.246 0-2.295-.406-3.148-1.219-.854-.815-1.28-1.803-1.28-2.968m-6.274-3.284v43.2h-7.5v-33.86h-.12l-13.408 33.86h-4.97l-13.738-33.86h-.09v33.86h-6.929v-43.2h10.755l12.412 32.024h.18l13.105-32.024z"></path>
+							<path d="M106.214 106.214H71.996V71.996h34.218z" fill="#f25022"></path>
+							<path d="M143.993 106.214h-34.218V71.996h34.218z" fill="#7fba00"></path>
+							<path d="M106.214 143.993H71.996v-34.218h34.218z" fill="#00a4ef"></path>
+							<path d="M143.993 143.993h-34.218v-34.218h34.218z" fill="#ffb900"></path>
+						</g>
+					</g>
+				</svg>
+			</div>
+		</a>
+	</div> 
+				
+		<div class="nav-bar-item is-hidden-tablet">
+			<div class="nav-bar-menu">
+				<button class="nav-bar-button is-title" title="전역 탐색" aria-expanded="false">
+					<span class="nav-bar-menu-title"><!---->Learn<!----></span>
+					<div class="nav-bar-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span class="nav-bar-burger-label"><!---->전역 탐색<!----></span>
+					</div>
+				</button>
+			</div>
+		</div>
+	
+				
+		<nav class="nav-bar-nav" role="navigation" aria-label="전역">
+			<ul class="nav-bar-nav-list">
+				
+		<li class="nav-bar-item is-category">
+			<a class="nav-bar-button is-title has-hover-underline" itemprop="url" href="https://docs.microsoft.com/ko-kr/">
+				<span><!---->Docs<!----></span>
+			</a>
+		</li>
+	
+				<!----> <li class="nav-bar-item">
+				<a class=" nav-bar-button has-hover-underline " href="https://docs.microsoft.com/ko-kr/documentation">
+					<span><!---->설명서<!----></span>
+				</a>
+		  </li><!----> <li class="nav-bar-item">
+				<a class=" nav-bar-button has-hover-underline is-active" href="https://docs.microsoft.com/ko-kr/learn/">
+					<span><!---->Learn<!----></span>
+				</a>
+		  </li><!----> <li class="nav-bar-item">
+				<a class=" nav-bar-button has-hover-underline " href="https://docs.microsoft.com/ko-kr/answers/products/">
+					<span><!---->Q&amp;A<!----></span>
+				</a>
+		  </li><!----> <li class="nav-bar-item">
+				<a class=" nav-bar-button has-hover-underline " href="https://docs.microsoft.com/ko-kr/samples/browse/">
+					<span><!---->코드 샘플<!----></span>
+				</a>
+		  </li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-85">
+			<span><!---->자세히<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-85" aria-label="자세히">
+			<!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="https://docs.microsoft.com/ko-kr/documentation"><!---->설명서<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button is-active" href="https://docs.microsoft.com/ko-kr/learn/"><!---->Learn<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="https://docs.microsoft.com/ko-kr/answers/products/"><!---->Q&amp;A<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class=" nav-bar-button " href="https://docs.microsoft.com/ko-kr/samples/browse/"><!---->코드 샘플<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!---->
+			</ul>
+		</nav>
+	
+				<span class="nav-bar-spacer"></span>
+				
+		<div class="nav-bar-search " id="ax-86" hidden="">
+			
+		<form class="nav-bar-search-form" method="GET" name="nav-bar-search-form" role="search" id="nav-bar-search-form" aria-label="검색" aria-expanded="false" action="https://docs.microsoft.com/ko-kr/search/">
+			<div class="autocomplete" data-bi-name="autocomplete"><!----> <div class="control ">
+				<input role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" id="site-search-input" class="autocomplete-input input   is-small" type="search" name="terms" aria-expanded="false" aria-owns="ax-87-listbox" aria-activedescendant="" aria-label="검색" placeholder="검색">
+
+				<span aria-hidden="true" class="icon is-small is-left" hidden="">
+					<span class="has-text-primary docon docon-undefined"></span>
+				</span>
+
+				<span aria-hidden="true" class="autocomplete-loader loader has-text-primary " hidden=""></span>
+			</div>
+
+			<ul class="autocomplete-suggestions is-vertically-scrollable" role="listbox" id="ax-87-listbox" aria-label="site-search-input-suggestions" hidden="">
+				
+			</ul><!----></div>
+			<!-- mobile safari will not dispatch submit event unless there's a submit button that is not display:none -->
+			<button type="submit" class="visually-hidden" tabindex="-1" aria-hidden="true"></button>
+			<input name="category" hidden="" value="Learn">
+			
+			
+			
+		</form>
+	
+		</div>
+		
+					<div class="nav-bar-search">
+						<!-- hidden when the width drops to tablet -->
+						
+		<form class="nav-bar-search-form" method="GET" name="nav-bar-search-form" role="search" id="nav-bar-search-form-desktop" aria-label="검색" aria-expanded="false" action="https://docs.microsoft.com/ko-kr/search/">
+			<div class="autocomplete" data-bi-name="autocomplete"><!----> <div class="control has-icons-left">
+				<input role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" id="ax-88" class="autocomplete-input input control has-icons-left  is-small" type="search" name="terms" aria-expanded="false" aria-owns="ax-89-listbox" aria-activedescendant="" aria-label="검색" placeholder="검색">
+
+				<span aria-hidden="true" class="icon is-small is-left">
+					<span class="has-text-primary docon docon-search"></span>
+				</span>
+
+				<span aria-hidden="true" class="autocomplete-loader loader has-text-primary " hidden=""></span>
+			</div>
+
+			<ul class="autocomplete-suggestions is-vertically-scrollable" role="listbox" id="ax-89-listbox" aria-label="ax-88-suggestions" hidden="">
+				
+			</ul><!----></div>
+			<!-- mobile safari will not dispatch submit event unless there's a submit button that is not display:none -->
+			<button type="submit" class="visually-hidden" tabindex="-1" aria-hidden="true"></button>
+			<input name="category" hidden="" value="Learn">
+			
+			
+			
+		</form>
+	
+					</div>
+			  
+		<div class="nav-bar-search " hidden="">
+			<div class="nav-bar-search-form-expander">
+				<button id="form-expander" class="nav-bar-button has-hover-underline " title="검색" aria-expanded="false" aria-controls="ax-86">
+					
+		<span class="is-visually-hidden-mobile"><!---->검색<!----></span>
+		<span class="icon" aria-hidden="true">
+			<span class="docon docon-search"></span>
+		</span>
+	
+				</button>
+			</div>
+		</div>
+	
+				
+		<div class="nav-bar-profile">
+			
+		<a class="docs-sign-in auth-status-determined not-authenticated" href="https://docs.microsoft.com/ko-kr/learn/paths/az-900-describe-cloud-concepts/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813#"> 로그인 </a>
+	 
+		<div class="dropdown has-caret auth-status-determined authenticated">
+			<button class="dropdown-trigger button-reset" aria-controls="user-menu" aria-expanded="false" aria-label="계정">
+				<figure class="image is-36x36">
+					<img class="has-body-background-medium is-rounded" alt="" data-profile-property="avatarUrl" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNDQ4Ij48cGF0aCBmaWxsPSIjOTE5MTkxIiBkPSJNMjc3LjczMyAyNTIuODFjMzEuOTY2LTE4LjY0NCA1My43NDItNTIuOTIzIDUzLjc0Mi05Mi41MjcgMC01OS4yNjctNDguMjItMTA3LjQ3NS0xMDcuNDc1LTEwNy40NzUtNTkuMjY3IDAtMTA3LjQ3NSA0OC4yMDgtMTA3LjQ3NSAxMDcuNDc1IDAgMzkuNjA0IDIxLjc3IDczLjg4NCA1My43MzggOTIuNTI4QzExMi4zNSAyNzQuMTA1IDcyIDMyOC45OTggNzIgMzk1LjE5M2gyNC41NjZjMC03MS40NjYgNTUuOTgtMTI3LjQzNCAxMjcuNDM0LTEyNy40MzQgNzIuNjQgMCAxMjcuNDM0IDU0Ljc5MyAxMjcuNDM0IDEyNy40MzRIMzc2YzAtNjYuMTk3LTQwLjM1LTEyMS4wOS05OC4yNjctMTQyLjM4M3pNMTQxLjA5IDE2MC4yODJjMC00NS43MTMgMzcuMTk3LTgyLjkxIDgyLjkxLTgyLjkxIDQ1LjcyNSAwIDgyLjkxIDM3LjE5NyA4Mi45MSA4Mi45MXMtMzcuMTg2IDgyLjkxLTgyLjkxIDgyLjkxYy00NS43MTMgMC04Mi45MS0zNy4xOTctODIuOTEtODIuOTF6Ii8+PC9zdmc+">
+				</figure>
+			</button>
+			<div class="dropdown-menu box has-flex-justify-content-start has-body-background" id="user-menu" role="menu">
+				<div class="media is-user-dir">
+					<div class="media-left">
+						<figure class="image is-48x48" aria-hidden="true">
+							<img class="has-body-background-medium is-rounded" aria-labelledby="displayName" data-profile-property="avatarUrl" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNDQ4Ij48cGF0aCBmaWxsPSIjOTE5MTkxIiBkPSJNMjc3LjczMyAyNTIuODFjMzEuOTY2LTE4LjY0NCA1My43NDItNTIuOTIzIDUzLjc0Mi05Mi41MjcgMC01OS4yNjctNDguMjItMTA3LjQ3NS0xMDcuNDc1LTEwNy40NzUtNTkuMjY3IDAtMTA3LjQ3NSA0OC4yMDgtMTA3LjQ3NSAxMDcuNDc1IDAgMzkuNjA0IDIxLjc3IDczLjg4NCA1My43MzggOTIuNTI4QzExMi4zNSAyNzQuMTA1IDcyIDMyOC45OTggNzIgMzk1LjE5M2gyNC41NjZjMC03MS40NjYgNTUuOTgtMTI3LjQzNCAxMjcuNDM0LTEyNy40MzQgNzIuNjQgMCAxMjcuNDM0IDU0Ljc5MyAxMjcuNDM0IDEyNy40MzRIMzc2YzAtNjYuMTk3LTQwLjM1LTEyMS4wOS05OC4yNjctMTQyLjM4M3pNMTQxLjA5IDE2MC4yODJjMC00NS43MTMgMzcuMTk3LTgyLjkxIDgyLjkxLTgyLjkxIDQ1LjcyNSAwIDgyLjkxIDM3LjE5NyA4Mi45MSA4Mi45MXMtMzcuMTg2IDgyLjkxLTgyLjkxIDgyLjkxYy00NS43MTMgMC04Mi45MS0zNy4xOTctODIuOTEtODIuOTF6Ii8+PC9zdmc+">
+						</figure>
+					</div>
+					<div class="media-content">
+						<p class="title is-size-large">
+							<span id="displayName" class="is-inline-truncated has-max-width-200" data-profile-property="displayName">박병훈</span>
+						</p>
+						<p class="subtitle is-size-small has-margin-bottom-none">
+							<span class="is-inline-truncated has-max-width-200" data-profile-property="upn">bhpark2@wonik.com</span>
+						</p>
+					</div>
+				</div>
+				<ul class="has-padding-top-small has-padding-bottom-medium">
+					<li class="has-padding-top-extra-small has-padding-bottom-extra-small">
+						<a href="https://docs.microsoft.com/ko-kr/users/68131229/" data-profile-property="profileUrl"><!---->프로필<!----></a>
+					</li>
+					<li class="has-padding-top-extra-small has-padding-bottom-extra-small">
+						<a href="https://docs.microsoft.com/ko-kr/users/68131229/bookmarks" data-profile-property="bookmarksUrl"><!---->책갈피<!----></a>
+					</li>
+					<li class="has-padding-top-extra-small has-padding-bottom-extra-small">
+						<a href="https://docs.microsoft.com/ko-kr/users/68131229/collections" data-profile-property="collectionsUrl"><!---->컬렉션<!----></a>
+					</li>
+					<li class="has-padding-top-extra-small">
+						<a href="https://docs.microsoft.com/ko-kr/users/68131229/challenges" data-profile-property="challengesUrl"><!---->과제<!----></a>
+					</li>
+				</ul>
+				<div class="has-border-top has-padding-top-medium">
+					<a class="docs-sign-out" href="https://docs.microsoft.com/ko-kr/learn/paths/az-900-describe-cloud-concepts/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813#"><!---->로그아웃<!----></a>
+				</div>
+			</div>
+		</div>
+	
+		</div>
+	
+			 <!----></div> <div class="nav-bar has-border-top is-hidden-mobile"><!----> 
+		<a class="nav-bar-button is-title has-hover-underline" itemprop="url" href="https://docs.microsoft.com/learn/">
+			<span>
+				Learn
+				
+			</span>
+		</a>
+	 
+		
+		<nav class="nav-bar-nav" role="navigation" aria-label="사이트">
+			<ul class="nav-bar-nav-list">
+				
+				<!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button is-active has-hover-underline" aria-controls="ax-90">
+			<span><!---->제품<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-90" aria-label="제품">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/azure/"><!---->Azure<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/dynamics365/"><!---->Dynamics 365<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/github"><!---->GitHub<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/m365/"><!---->Microsoft 365<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/dotnet/"><!---->.NET<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/powerplatform/"><!---->Power Platform<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/teams/"><!---->Teams<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/browse/"><!---->모든 경로 찾아보기<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-91">
+			<span><!---->역할<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-91" aria-label="역할">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/administrator"><!---->관리자<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/ai-engineer"><!---->AI 엔지니어<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/app-maker"><!---->앱 작성자<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/auditor"><!---->감사자<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/business-user"><!---->비즈니스 사용자<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/data-analyst"><!---->데이터 분석가<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/data-engineer"><!---->데이터 엔지니어<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/data-scientist"><!---->데이터 과학자<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/developer"><!---->개발자<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/devops-engineer"><!---->DevOps 엔지니어<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/educator"><!---->강사<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/functional-consultant"><!---->기능 컨설턴트<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/security-engineer"><!---->보안 엔지니어<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/solutions-architect"><!---->솔루션 설계자<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/student"><!---->학생<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="nav-bar-item">
+				<a class="has-external-link-indicator nav-bar-button has-hover-underline " href="https://docs.microsoft.com/ko-kr/learn/tv/">
+					<span><!---->Learn TV<!----></span>
+				</a>
+		  </li><!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-92">
+			<span><!---->인증<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-92" aria-label="인증">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/certifications/"><!---->개요<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/certifications/browse/"><!---->인증 찾아보기<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/certifications/courses/browse/"><!---->과정 찾아보기<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="nav-bar-item">
+				<a class="has-external-link-indicator nav-bar-button has-hover-underline " href="https://docs.microsoft.com/ko-kr/learn/support/">
+					<span><!---->FAQ 및 도움말<!----></span>
+				</a>
+		  </li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-93">
+			<span><!---->자세히<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-93" aria-label="자세히">
+			<!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button is-active " aria-controls="ax-94">
+			<span><!---->제품<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-94" aria-label="제품">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/azure/"><!---->Azure<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/dynamics365/"><!---->Dynamics 365<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/github"><!---->GitHub<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/m365/"><!---->Microsoft 365<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/dotnet/"><!---->.NET<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/powerplatform/"><!---->Power Platform<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/teams/"><!---->Teams<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/browse/"><!---->모든 경로 찾아보기<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  " aria-controls="ax-95">
+			<span><!---->역할<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-95" aria-label="역할">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/administrator"><!---->관리자<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/ai-engineer"><!---->AI 엔지니어<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/app-maker"><!---->앱 작성자<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/auditor"><!---->감사자<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/business-user"><!---->비즈니스 사용자<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/data-analyst"><!---->데이터 분석가<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/data-engineer"><!---->데이터 엔지니어<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/data-scientist"><!---->데이터 과학자<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/developer"><!---->개발자<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/devops-engineer"><!---->DevOps 엔지니어<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/educator"><!---->강사<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/functional-consultant"><!---->기능 컨설턴트<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/security-engineer"><!---->보안 엔지니어<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/solutions-architect"><!---->솔루션 설계자<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/roles/student"><!---->학생<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!---->
+				<li class="nav-bar-item" hidden="">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/tv/"><!---->Learn TV<!----></a>
+				</li>
+		  <!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  " aria-controls="ax-96">
+			<span><!---->인증<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-96" aria-label="인증">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/certifications/"><!---->개요<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/certifications/browse/"><!---->인증 찾아보기<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/certifications/courses/browse/"><!---->과정 찾아보기<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!---->
+				<li class="nav-bar-item" hidden="">
+					<a class="has-external-link-indicator nav-bar-button " href="https://docs.microsoft.com/ko-kr/learn/support/"><!---->FAQ 및 도움말<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!---->
+			</ul>
+		</nav>
+	
+		<span class="nav-bar-spacer"></span>
+		 
+		<div id="level-status-container" class="is-flex has-flex-align-items-center is-hidden-touch">
+			<div id="level-status" class="is-relative level has-margin-left-extra-small has-margin-right-extra-small">
+	<span id="level-status-text" class="is-size-extra-small has-text-wrap is-inline-truncated is-uppercase has-text-weight-semibold">수준 1</span>
+	<span id="level-status-progress-container" class="hexagonal-progress">
+		<progress id="level-status-progress" class="progress is-hidden-mobile is-inline-block is-relative is-success" value="11" max="100">11%</progress>
+		<span class="hexagonal-progress-marker"></span>
+	</span>
+	<span id="level-status-points" class="is-size-extra-small has-text-wrap is-inline-truncated is-uppercase"><span class="has-text-weight-semibold">200</span>/1799 XP</span>
+</div>
+		</div>
+	
+	 <!----></div> <!----></header>		</div>
+
+						<div class="content-header uhf-container has-padding has-default-focus has-border-bottom-none" data-bi-name="content-header">
+					<nav class="breadcrumb-holder has-padding-none has-padding-left-medium-tablet has-padding-right-medium-tablet has-padding-left-none-uhf-tablet has-padding-left-none-uhf-tablet has-padding-none-desktop has-flex-grow" data-bi-name="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList" role="navigation" aria-label="이동 경로">
+						<ul id="page-breadcrumbs" class="breadcrumbs"><!----><!----> <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				<a itemprop="item" href="https://docs.microsoft.com/ko-kr/"><span itemprop="name"><!---->Docs<!----></span></a>
+				<meta itemprop="position" content="1">
+			</li><!----> <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				<a itemprop="item" href="https://docs.microsoft.com/ko-kr/learn/"><span itemprop="name"><!---->Learn<!----></span></a>
+				<meta itemprop="position" content="2">
+			</li><!----> <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				<a itemprop="item" href="https://docs.microsoft.com/ko-kr/learn/browse/"><span itemprop="name"><!---->찾아보기<!----></span></a>
+				<meta itemprop="position" content="3">
+			</li><!----> <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				<span itemprop="name"><!---->Azure 기본 사항 파트 1: 핵심 Azure 개념에 관해 설명하기<!----></span>
+				<meta itemprop="position" content="4">
+			</li><!----><!----></ul>
+					</nav>
+				<div class="content-header-controls">
+					<button type="button" class="contents-button button" data-bi-name="contents-expand" aria-haspopup="true">
+						<span class="icon"><span class="docon docon-menu" aria-hidden="true"></span></span>
+						<span class="contents-expand-title">콘텐츠</span>
+					</button>
+					<button type="button" class="ap-collapse-behavior ap-expanded button" data-bi-name="ap-collapse" aria-controls="action-panel">
+						<span class="icon"><span class="docon docon-exit-mode" aria-hidden="true"></span></span>
+						<span>포커스 모드 종료</span>
+					</button>
+				</div>
+				<div class="has-padding-none-tablet has-padding-medium is-size-small is-flex-touch has-flex-justify-content-space-between-touch has-flex-grow page-action-holder">
+					<ul class="is-hidden-mobile action-list has-flex-justify-content-start has-flex-justify-content-end-tablet is-flex is-flex-row has-flex-wrap has-flex-grow is-unstyled">
+					</ul>
+					<button type="button" class="has-border contents-button button is-small is-text is-hidden-tablet has-inner-focus" aria-label="콘텐츠" data-bi-name="contents-expand">
+						<span class="icon">
+							<span class="docon docon-editor-list-bullet" aria-hidden="true"></span>
+						</span>
+						<span class="contents-expand-title">목차</span>
+					</button>
+					<div class="is-invisible"></div>
+					<div class="is-hidden-tablet level-item is-flexible level-right">
+						<button type="button" class="page-actions-button button is-small is-text is-hidden-tablet has-inner-focus has-border is-full-height  has-margin-left-small" aria-label="페이지 작업" data-bi-name="pageactions">
+							<span class="icon">
+								<span class="docon docon-more-vertical" aria-hidden="true"></span>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+
+
+		<div id="disclaimer-holder" class="has-overflow-hidden has-default-focus">
+			<!-- liquid-tag banners sectional -->
+		</div>
+	</div>
+
+	<div class="mainContainer  uhf-container has-body-background-dark uhf-container is-full  has-default-focus" data-bi-name="body">
+
+		<div class="columns has-large-gaps is-gapless-mobile  is-gapless">
+
+
+			<section class="primary-holder column ">
+				<div class="columns is-gapless-mobile has-large-gaps  is-gapless">
+
+
+				<div id="main-column" class="column ">
+
+					<main id="main" role="main" class="" data-bi-name="content" lang="ko-kr" dir="ltr">
+
+
+<div class="is-mobile is-fixed-bottom is-hidden-tablet">
+	<a id="start-unit-mobile" class="button is-fullwidth is-primary is-radiusless is-large has-margin-none" data-bi-name="start" href="https://docs.microsoft.com/ko-kr/learn/modules/intro-to-azure-fundamentals/what-is-microsoft-azure/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts">
+		<span>계속</span>
+		<span class="icon docon docon-chevron-right-light" aria-hidden="true"></span>
+	</a>
+</div>
+
+						
+
+
+						<!-- <content> -->
+							<div class="has-body-background">
+	<div class="modular-content-container">
+		<div class="section is-small is-uniform has-padding-top-large has-padding-top-extra-large-tablet has-padding-top-large-desktop is-relative-mobile">
+			<div class="columns has-large-gaps has-margin-none">
+
+				<figure class="image is-112x112-desktop is-96x96 has-margin-bottom-large">
+					<img role="presentation" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/az-900-describe-cloud-concepts.svg" alt="" data-linktype="absolute-path">
+				</figure>
+
+				<div class="column has-padding-none has-padding-large-tablet is-relative-tablet">
+					<div data-progress-uid="learn.az-900-describe-cloud-concepts" class="xp-tag is-absolute has-top-zero has-margin-top-medium has-margin-top-large-tablet has-margin-top-none-desktop has-right-zero has-margin-right-large has-margin-right-extra-large-tablet">
+						<div class="xp-tag-hexagon">
+							<span class="xp-tag-icon is-shown-complete docon docon-check"></span>
+							<span aria-hidden="true" class="xp-tag-xp">3000 XP</span>
+						</div>
+					</div>
+					<div class="columns is-mobile is-gapless has-margin-bottom-none">
+						<div class="column is-auto heading-container">
+							<h1 class="title is-2 has-margin-none has-margin-right-super-large-tablet">Azure 기본 사항 파트 1: 핵심 Azure 개념에 관해 설명하기</h1>
+							<ul class="metadata page-metadata">
+								<li id="time-remaining">1시간 23분 남음</li>
+								<li>
+									학습 경로
+								</li>
+								<li id="modules-remaining">0/3개 모듈 완료</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="is-size-small tags has-margin-top-small has-margin-bottom-small is-hidden-portrait">
+							<div class="tag is-size-extra-small">
+								초급
+							</div>
+							<div class="tag is-size-extra-small">
+								관리자
+							</div>
+							<div class="tag is-size-extra-small">
+								솔루션 아키텍처
+							</div>
+							<div class="tag is-size-extra-small">
+								개발자
+							</div>
+							<div class="tag is-size-extra-small">
+								학생
+							</div>
+							<div class="tag is-size-extra-small">
+								Azure
+							</div>
+							<div class="tag is-size-extra-small">
+								Azure Resource Manager
+							</div>
+							<div class="tag is-size-extra-small">
+								Functions
+							</div>
+					</div>
+
+						<div class="column is-7">
+							<div class="embeddedvideo has-margin-top-medium has-margin-bottom-medium is-hidden">
+								<iframe data-bi-name="learning-path-video" allowfullscreen="true" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/RE4M6Yh.html" title="Azure 기본 사항 동영상: 클라우드 개념에 대해 설명하기" data-linktype="external"></iframe>
+							</div>
+						</div>
+				
+					<div class="summary is-size-body content"><p>클라우드는 처음이신가요? Azure 기본 사항은 6부 시리즈로 클라우드의 기본 개념을 설명하고 다양한 Azure 서비스의 간소화된 개요를 제공합니다. 첫 번째 서비스를 추가 비용 없이 배포할 수 있는 실습도 안내합니다.</p>
+<p>이 학습 경로를 완료하고 나면 다음을 수행할 수 있습니다.</p>
+<ul>
+<li>Azure 클라우드 컴퓨팅의 장점과 이를 통해 시간과 비용을 절감하는 방법 이해</li>
+<li>고가용성, 확장성, 탄력성, 민첩성 및 재해 복구와 같은 클라우드 개념에 관해 설명하기</li>
+<li>구독, 관리 그룹, 리소스 및 리소스 그룹과 같은 핵심 Azure 아키텍처 구성 요소에 관해 설명하기</li>
+<li>Azure 지역, 지역 쌍 및 가용성 영역과 같은 지리적 배포 개념 요약하기</li>
+</ul>
+<p>이 시리즈의 학습 경로는 다음과 같습니다.</p>
+<section class="row">
+<div class="column">
+<p><img src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/az-900-describe-cloud-concepts.svg" width="101" height="84" alt="The trophy for the Describe core Azure concepts learning path." role="presentation" data-linktype="absolute-path"></p>
+<p>1부: 핵심 Azure 개념에 관해 설명하기</p>
+</div>
+<div class="column">
+<p><img src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/az-900-describe-core-azure-services.svg" width="101" height="84" alt="The trophy for the Describe core Azure services learning path." role="presentation" data-linktype="absolute-path"></p>
+<p><a href="https://docs.microsoft.com/ko-kr/learn/paths/az-900-describe-core-azure-services/" data-linktype="absolute-path">2부: 핵심 Azure 서비스에 관해 설명하기</a></p>
+</div>
+<div class="column">
+<p><img src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg" width="75.23" height="84" alt="The trophy for the Describe core solutions and management tools on Azure learning path." role="presentation" data-linktype="absolute-path"></p>
+<p><a href="https://docs.microsoft.com/ko-kr/learn/paths/az-900-describe-core-solutions-management-tools-azure/" data-linktype="absolute-path">3부: Azure의 핵심 솔루션 및 관리 도구에 관해 설명하기</a></p>
+</div>
+</section>
+<section class="row">
+<div class="column">
+<p><img src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/examine-microsoft-azure-security-privacy-compliance-trust.svg" width="101" height="84" alt="The trophy for the Describe general security and network security features learning path." role="presentation" data-linktype="absolute-path"></p>
+<p><a href="https://docs.microsoft.com/ko-kr/learn/paths/az-900-describe-general-security-network-security-features/" data-linktype="absolute-path">4부: 일반 보안 및 네트워크 보안 기능에 관해 설명하기</a></p>
+</div>
+<div class="column">
+<p><img src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/az-900-describe-identity-governance-privacy-compliance-features.svg" width="75.23" height="84" alt="The trophy for the Describe identity, governance, privacy, and compliance features learning path." role="presentation" data-linktype="absolute-path"></p>
+<p><a href="https://docs.microsoft.com/ko-kr/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/" data-linktype="absolute-path">5부: ID, 거버넌스, 개인 정보 보호 및 규정 준수 기능에 관해 설명하기</a></p>
+</div>
+<div class="column">
+<p><img src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" height="84" alt="The trophy for the Describe Azure cost management and service level agreements learning path." role="presentation" data-linktype="absolute-path"></p>
+<p><a href="https://docs.microsoft.com/ko-kr/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/" data-linktype="absolute-path">6부: Azure Cost Management 및 서비스 수준 계약에 관해 설명하기</a></p>
+</div>
+</section>
+<p><a href="https://docs.microsoft.com/ko-kr/learn/certifications/exams/az-900" data-linktype="absolute-path">시험 AZ-900: Azure 기본 사항</a>을 준비하는 경우 시리즈의 모든 학습 경로를 완료합니다.</p>
+</div>
+
+						<div class="prerequisites is-size-small content has-margin-bottom-medium">
+							<h2 class="title is-6 has-margin-top-small has-margin-bottom-none">필수 조건</h2>
+							<ul>
+<li>기본적인 컴퓨팅 개념과 용어를 잘 알고 있어야 합니다.</li>
+<li>클라우드 컴퓨팅에 관한 이해가 도움이 되지만 꼭 필요한 것은 아닙니다.</li>
+</ul>
+
+						</div>
+
+					<div id="learning-path-actions" class="buttons"><a href="https://docs.microsoft.com/ko-kr/learn/modules/intro-to-azure-fundamentals/what-is-microsoft-azure/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts" id="start-path" class="button is-primary  is-hidden-mobile " data-bi-name="continue"><span>계속</span><span class="icon docon docon-chevron-right-light" aria-hidden="true"></span></a>
+						<button type="button" class="bookmark button is-text has-inner-focus" data-list-type="bookmarks" data-bi-name="bookmark" title="Azure 기본 사항 파트 1: 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn | Microsoft Docs의 책갈피 추가" aria-pressed="false">
+							<span class="icon has-text-primary" aria-hidden="true">
+								<span class="docon docon-single-bookmark"></span>
+							</span>
+							<span class="bookmark-status">
+								책갈피
+							</span>
+						</button>
+						<button type="button" class="collection button is-text has-inner-focus has-margin-right-none" data-bi-name="collection" data-list-item-title="Azure 기본 사항 파트 1: 핵심 Azure 개념에 관해 설명하기" data-list-source="learning-path" data-list-type="collection" aria-pressed="false" title="컬렉션에 Azure 기본 사항 파트 1: 핵심 Azure 개념에 관해 설명하기 추가">
+							<span class="icon has-text-primary" aria-hidden="true">
+								<span class="docon docon-circle-addition"></span>
+							</span>
+							<span class="sdd-to-collection-status">
+								컬렉션에 추가
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modular-content-container">
+	<div class="section is-small is-uniform has-padding-none has-padding-top-extra-large-tablet has-padding-right-large-tablet has-padding-bottom-extra-large-tablet has-padding-left-large-tablet has-padding-large-desktop has-body-background-mobile">
+		<h3 class="title is-5 has-padding-left-large has-padding-left-none-tablet">이 학습 경로의 모듈</h3>
+			  <div id="learn.azure.intro-to-azure-fundamentals" class="box has-margin-none has-margin-bottom-large-tablet has-padding-none is-shadowless-mobile has-border-top is-relative" data-bi-name="module">
+	<div class="has-padding-large has-padding-bottom-none-tablet">
+		<div data-progress-uid="learn.azure.intro-to-azure-fundamentals" class="xp-tag is-absolute has-top-zero has-margin-top-extra-large-tablet has-margin-top-medium has-right-zero has-margin-right-extra-large-tablet has-margin-right-large">
+			<div class="xp-tag-hexagon">
+				<span class="xp-tag-icon is-shown-complete docon docon-check"></span>
+				<span aria-hidden="true" class="xp-tag-xp">900 XP</span>
+			</div>
+		</div>
+		<a href="https://docs.microsoft.com/ko-kr/learn/modules/intro-to-azure-fundamentals/" class="is-hidden-tablet is-absolute-fills module-link" data-linktype="relative-path"></a>
+		<div class="columns has-large-gaps has-margin-none">
+
+			<div class="image is-96x96 is-hidden-mobile">
+				<a aria-hidden="true" tabindex="-1" href="https://docs.microsoft.com/ko-kr/learn/modules/intro-to-azure-fundamentals/" class="is-block" data-linktype="relative-path">
+					<img role="presentation" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/intro-to-azure-fundamentals.svg" alt="" data-linktype="absolute-path">
+				</a>
+			</div>
+
+			<div class="column is-auto has-padding-none has-padding-top-large has-padding-large-tablet">
+				<div class="columns has-large-gaps is-mobile has-margin-none">
+					<div class="column is-narrow is-hidden-tablet has-padding-top-none has-padding-left-none">
+						<div class="image is-max-48x48">
+							<img role="presentation" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/intro-to-azure-fundamentals.svg" alt="" data-linktype="absolute-path">
+						</div>
+					</div>
+					<div class="column is-auto has-padding-none">
+						<a href="https://docs.microsoft.com/ko-kr/learn/modules/intro-to-azure-fundamentals/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts" class="is-block is-undecorated" data-linktype="relative-path">
+							<h3 class="is-size-h6 has-margin-none has-content-margin-right-super-large-tablet">Azure 기본 사항 소개</h3>
+						</a>
+						<ul class="metadata page-metadata">
+							<li class="module-time-remaining">25분 남음</li>
+							<li class="module-type">모듈</li>
+							<li class="module-units-remaining">2/8개 단원 완료</li>
+						</ul>
+						<div class="page-rating">
+						<div class="star-rating-display"><!----><!---->
+		<div class="rating-stars"><!----><!----><span aria-hidden="true" class="star docon docon-star"></span><!----><span aria-hidden="true" class="star docon docon-star"></span><!----><span aria-hidden="true" class="star docon docon-star"></span><!----><span aria-hidden="true" class="star docon docon-star"></span><!----><span aria-hidden="true" class="star docon docon-star"></span><!----> <span class="explanation-text"><!---->4.8 (45,349)</span><!----></div><!----></div></div>
+					</div>
+				</div>
+				<div class="is-hidden-portrait has-padding-left-large has-padding-left-large has-padding-left-none-tablet has-padding-left-none-tablet">
+					<div class="summary is-size-body module-summary"><p>이 모듈에서는 클라우드 컴퓨팅 및 Azure의 기본 사항과 Azure 구독 및 계정을 시작하는 방법을 소개합니다.</p>
+</div><p class="is-hidden-mobile has-margin-bottom-medium"><a href="https://docs.microsoft.com/ko-kr/learn/modules/intro-to-azure-fundamentals/what-is-microsoft-azure/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts" id="start-unit" class="button is-primary  is-hidden-mobile has-margin-top-small" data-bi-name="continue"><span>계속</span><span class="icon docon docon-chevron-right-light" aria-hidden="true"></span></a></p>
+					<div data-bi-name="units">
+						<button class="button is-text is-undecorated is-small unit-expander" data-bi-name="expander" aria-expanded="true" aria-controls="aria-learn.azure.intro-to-azure-fundamentals" aria-label="이 모듈의 단원 표시/숨기기"> 
+							<span class="module-overview has-text-weight-semibold is-size-small">개요</span>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-chevron-down-light expanded-indicator"></span>
+							</span>
+						</button>
+						<div id="aria-learn.azure.intro-to-azure-fundamentals" class="module-units" style=""><!---->
+		<ul class="has-margin-left-none">
+			<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable is-complete" data-progress-uid="learn.azure.intro-to-azure-fundamentals.introduction">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/intro-to-azure-fundamentals/introduction/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->소개<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->0분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable is-complete" data-progress-uid="learn.azure.intro-to-azure-fundamentals.what-is-cloud-computing">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/intro-to-azure-fundamentals/what-is-cloud-computing/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->클라우드 컴퓨팅이란?<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->0분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.intro-to-azure-fundamentals.what-is-microsoft-azure">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/intro-to-azure-fundamentals/what-is-microsoft-azure/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->Azure란?<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->6분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.intro-to-azure-fundamentals.tour-of-azure-services">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->Azure 서비스 둘러보기<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->11분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.intro-to-azure-fundamentals.get-started-with-azure-accounts">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/intro-to-azure-fundamentals/get-started-with-azure-accounts/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->Azure 계정 시작<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->2분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.intro-to-azure-fundamentals.case-study-introduction">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/intro-to-azure-fundamentals/case-study-introduction/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->사례 연구 소개<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->2분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.intro-to-azure-fundamentals.knowledge-check">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/intro-to-azure-fundamentals/knowledge-check/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->지식 점검<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->3분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.intro-to-azure-fundamentals.summary">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/intro-to-azure-fundamentals/summary/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->요약<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->1분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+		</ul>
+	<!----></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="has-border-top has-padding-extra-small has-padding-left-small has-padding-right-medium">
+		<div class="buttons is-right">
+			<button type="button" class="bookmark button is-text has-text-primary has-inner-focus is-small has-margin-right-none" data-bi-name="bookmark" data-list-item-title="Azure 기본 사항 소개" data-list-item-url="/learn/modules/intro-to-azure-fundamentals/" data-list-type="bookmarks" aria-pressed="false" title="Azure 기본 사항 소개의 책갈피 추가">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-single-bookmark"></span>
+				</span>
+			</button>
+			<button type="button" class="collection button is-text has-text-primary has-inner-focus is-small has-margin-right-none" data-bi-name="collection" data-list-item-title="Azure 기본 사항 소개" data-list-item-url="/learn/modules/intro-to-azure-fundamentals/" data-list-type="collection" aria-pressed="false" title="컬렉션에 Azure 기본 사항 소개 추가">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-circle-addition"></span>
+				</span>
+			</button>
+		</div>
+	</div>
+</div>
+			  <div id="learn.azure.fundamental-azure-concepts" class="box has-margin-none has-margin-bottom-large-tablet has-padding-none is-shadowless-mobile has-border-top is-relative" data-bi-name="module">
+	<div class="has-padding-large has-padding-bottom-none-tablet">
+		<div data-progress-uid="learn.azure.fundamental-azure-concepts" class="xp-tag is-absolute has-top-zero has-margin-top-extra-large-tablet has-margin-top-medium has-right-zero has-margin-right-extra-large-tablet has-margin-right-large">
+			<div class="xp-tag-hexagon">
+				<span class="xp-tag-icon is-shown-complete docon docon-check"></span>
+				<span aria-hidden="true" class="xp-tag-xp">700 XP</span>
+			</div>
+		</div>
+		<a href="https://docs.microsoft.com/ko-kr/learn/modules/fundamental-azure-concepts/" class="is-hidden-tablet is-absolute-fills module-link" data-linktype="relative-path"></a>
+		<div class="columns has-large-gaps has-margin-none">
+
+			<div class="image is-96x96 is-hidden-mobile">
+				<a aria-hidden="true" tabindex="-1" href="https://docs.microsoft.com/ko-kr/learn/modules/fundamental-azure-concepts/" class="is-block" data-linktype="relative-path">
+					<img role="presentation" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/fundamental-azure-concepts.svg" alt="" data-linktype="absolute-path">
+				</a>
+			</div>
+
+			<div class="column is-auto has-padding-none has-padding-top-large has-padding-large-tablet">
+				<div class="columns has-large-gaps is-mobile has-margin-none">
+					<div class="column is-narrow is-hidden-tablet has-padding-top-none has-padding-left-none">
+						<div class="image is-max-48x48">
+							<img role="presentation" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/fundamental-azure-concepts.svg" alt="" data-linktype="absolute-path">
+						</div>
+					</div>
+					<div class="column is-auto has-padding-none">
+						<a href="https://docs.microsoft.com/ko-kr/learn/modules/fundamental-azure-concepts/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts" class="is-block is-undecorated" data-linktype="relative-path">
+							<h3 class="is-size-h6 has-margin-none has-content-margin-right-super-large-tablet">Azure 기본 개념 설명</h3>
+						</a>
+						<ul class="metadata page-metadata">
+							<li class="module-time-remaining">24분 남음</li>
+							<li class="module-type">모듈</li>
+							<li class="module-units-remaining">0/6개 단원 완료</li>
+						</ul>
+						<div class="page-rating">
+						<div class="star-rating-display"><!----><!---->
+		<div class="rating-stars"><!----><!----><span aria-hidden="true" class="star docon docon-star"></span><!----><span aria-hidden="true" class="star docon docon-star"></span><!----><span aria-hidden="true" class="star docon docon-star"></span><!----><span aria-hidden="true" class="star docon docon-star"></span><!----><span aria-hidden="true" class="star docon docon-star"></span><!----> <span class="explanation-text"><!---->4.8 (24,794)</span><!----></div><!----></div></div>
+					</div>
+				</div>
+				<div class="is-hidden-portrait has-padding-left-large has-padding-left-large has-padding-left-none-tablet has-padding-left-none-tablet">
+					<div class="summary is-size-body module-summary"><p>클라우드에 관심이 있지만 어떤 도움이 되는지 확신할 수 없으신가요? 이 모듈에서는 클라우드 컴퓨팅 서비스 사용의 이점에 대해 알아보고 클라우드 컴퓨팅의 범주와 유형을 구분하는 방법을 배웁니다.</p>
+</div>
+					<div data-bi-name="units">
+						<button class="button is-text is-undecorated is-small unit-expander" data-bi-name="expander" aria-expanded="false" aria-controls="aria-learn.azure.fundamental-azure-concepts" aria-label="이 모듈의 단원 표시/숨기기"> 
+							<span class="module-overview has-text-weight-semibold is-size-small">개요</span>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-chevron-down-light expanded-indicator"></span>
+							</span>
+						</button>
+						<div id="aria-learn.azure.fundamental-azure-concepts" class="module-units" style="" hidden=""><!---->
+		<ul class="has-margin-left-none">
+			<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.fundamental-azure-concepts.introduction">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/fundamental-azure-concepts/introduction/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->소개<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->2분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.fundamental-azure-concepts.benefits-of-cloud-computing">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/fundamental-azure-concepts/benefits-of-cloud-computing/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->클라우드 컴퓨팅의 이점 설명<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->5분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.fundamental-azure-concepts.categories-of-cloud-services">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/fundamental-azure-concepts/categories-of-cloud-services/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->클라우드 서비스의 여러 범주 설명<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->5분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.fundamental-azure-concepts.types-of-cloud-computing">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/fundamental-azure-concepts/types-of-cloud-computing/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->여러 클라우드 컴퓨팅 유형 설명<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->5분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.fundamental-azure-concepts.knowledge-check">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/fundamental-azure-concepts/knowledge-check/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->지식 점검<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->5분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.fundamental-azure-concepts.summary">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/fundamental-azure-concepts/summary/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->요약<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->2분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+		</ul>
+	<!----></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="has-border-top has-padding-extra-small has-padding-left-small has-padding-right-medium">
+		<div class="buttons is-right">
+			<button type="button" class="bookmark button is-text has-text-primary has-inner-focus is-small has-margin-right-none" data-bi-name="bookmark" data-list-item-title="Azure 기본 개념 설명" data-list-item-url="/learn/modules/fundamental-azure-concepts/" data-list-type="bookmarks" aria-pressed="false" title="Azure 기본 개념 설명의 책갈피 추가">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-single-bookmark"></span>
+				</span>
+			</button>
+			<button type="button" class="collection button is-text has-text-primary has-inner-focus is-small has-margin-right-none" data-bi-name="collection" data-list-item-title="Azure 기본 개념 설명" data-list-item-url="/learn/modules/fundamental-azure-concepts/" data-list-type="collection" aria-pressed="false" title="컬렉션에 Azure 기본 개념 설명 추가">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-circle-addition"></span>
+				</span>
+			</button>
+		</div>
+	</div>
+</div>
+			  <div id="learn.azure.azure-architecture-fundamentals" class="box has-margin-none has-margin-bottom-large-tablet has-padding-none is-shadowless-mobile has-border-top is-relative" data-bi-name="module">
+	<div class="has-padding-large has-padding-bottom-none-tablet">
+		<div data-progress-uid="learn.azure.azure-architecture-fundamentals" class="xp-tag is-absolute has-top-zero has-margin-top-extra-large-tablet has-margin-top-medium has-right-zero has-margin-right-extra-large-tablet has-margin-right-large">
+			<div class="xp-tag-hexagon">
+				<span class="xp-tag-icon is-shown-complete docon docon-check"></span>
+				<span aria-hidden="true" class="xp-tag-xp">1400 XP</span>
+			</div>
+		</div>
+		<a href="https://docs.microsoft.com/ko-kr/learn/modules/azure-architecture-fundamentals/" class="is-hidden-tablet is-absolute-fills module-link" data-linktype="relative-path"></a>
+		<div class="columns has-large-gaps has-margin-none">
+
+			<div class="image is-96x96 is-hidden-mobile">
+				<a aria-hidden="true" tabindex="-1" href="https://docs.microsoft.com/ko-kr/learn/modules/azure-architecture-fundamentals/" class="is-block" data-linktype="relative-path">
+					<img role="presentation" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/azure-architecture-fundamentals.svg" alt="" data-linktype="absolute-path">
+				</a>
+			</div>
+
+			<div class="column is-auto has-padding-none has-padding-top-large has-padding-large-tablet">
+				<div class="columns has-large-gaps is-mobile has-margin-none">
+					<div class="column is-narrow is-hidden-tablet has-padding-top-none has-padding-left-none">
+						<div class="image is-max-48x48">
+							<img role="presentation" src="./Azure 기본 사항 파트 1_ 핵심 Azure 개념에 관해 설명하기(AZ-900) - Learn _ Microsoft Docs_files/azure-architecture-fundamentals.svg" alt="" data-linktype="absolute-path">
+						</div>
+					</div>
+					<div class="column is-auto has-padding-none">
+						<a href="https://docs.microsoft.com/ko-kr/learn/modules/azure-architecture-fundamentals/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts" class="is-block is-undecorated" data-linktype="relative-path">
+							<h3 class="is-size-h6 has-margin-none has-content-margin-right-super-large-tablet">핵심 Azure 아키텍처 구성 요소 설명</h3>
+						</a>
+						<ul class="metadata page-metadata">
+							<li class="module-time-remaining">34분 남음</li>
+							<li class="module-type">모듈</li>
+							<li class="module-units-remaining">0/8개 단원 완료</li>
+						</ul>
+						<div class="page-rating">
+						<div class="star-rating-display"><!----><!---->
+		<div class="rating-stars"><!----><!----><span aria-hidden="true" class="star docon docon-star"></span><!----><span aria-hidden="true" class="star docon docon-star"></span><!----><span aria-hidden="true" class="star docon docon-star"></span><!----><span aria-hidden="true" class="star docon docon-star"></span><!----><span aria-hidden="true" class="star docon docon-star"></span><!----> <span class="explanation-text"><!---->4.8 (11,407)</span><!----></div><!----></div></div>
+					</div>
+				</div>
+				<div class="is-hidden-portrait has-padding-left-large has-padding-left-large has-padding-left-none-tablet has-padding-left-none-tablet">
+					<div class="summary is-size-body module-summary"><p>이 모듈에서는 Azure 아키텍처를 사용하는 데 필요한 다양한 개념, 리소스 및 용어를 검토합니다. 예를 들어 Azure 구독, 관리 그룹, 리소스 그룹, Azure Resource Manager, Azure 지역 및 가용성 영역에 대해 알아봅니다.</p>
+</div>
+					<div data-bi-name="units">
+						<button class="button is-text is-undecorated is-small unit-expander" data-bi-name="expander" aria-expanded="false" aria-controls="aria-learn.azure.azure-architecture-fundamentals" aria-label="이 모듈의 단원 표시/숨기기"> 
+							<span class="module-overview has-text-weight-semibold is-size-small">개요</span>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-chevron-down-light expanded-indicator"></span>
+							</span>
+						</button>
+						<div id="aria-learn.azure.azure-architecture-fundamentals" class="module-units" style="" hidden=""><!---->
+		<ul class="has-margin-left-none">
+			<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.azure-architecture-fundamentals.introduction">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/azure-architecture-fundamentals/introduction/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->소개<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->2분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.azure-architecture-fundamentals.overview">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/azure-architecture-fundamentals/overview/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->Azure 구독, 관리 그룹, 리소스 및 지역 개요<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->2분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.azure-architecture-fundamentals.management-groups-subscriptions">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/azure-architecture-fundamentals/management-groups-subscriptions/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->Azure 구독 및 관리 그룹<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->6분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.azure-architecture-fundamentals.resources-resource-manager">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/azure-architecture-fundamentals/resources-resource-manager/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->Azure 리소스 및 Azure Resource Manager<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->4분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.azure-architecture-fundamentals.regions-availability-zones">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/azure-architecture-fundamentals/regions-availability-zones/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->Azure 지역 및 가용성 영역<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->7분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.azure-architecture-fundamentals.exercise-create-website">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/azure-architecture-fundamentals/exercise-create-website/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->연습 - Azure에서 호스트된 웹 사이트 만들기<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->7분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.azure-architecture-fundamentals.knowledge-check">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/azure-architecture-fundamentals/knowledge-check/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->지식 점검<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->4분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+					<li class="module-unit is-unstyled is-size-body is-relative has-padding-bottom-small has-padding-top-small completable" data-progress-uid="learn.azure.azure-architecture-fundamentals.summary">
+						<div class="barLink is-unit-list-item has-margin-none columns">
+							<div class="column is-11 has-padding-none has-content-margin-right-small">
+								<a class="unit-title is-block is-size-body has-line-height-reset" href="https://docs.microsoft.com/ko-kr/learn/modules/azure-architecture-fundamentals/summary/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813&amp;ns-enrollment-type=LearningPath&amp;ns-enrollment-id=learn.az-900-describe-cloud-concepts"><!---->요약<!----></a>
+								<span class="unit-duration is-size-extra-small has-margin-top-small has-text-subtle"><!---->2분<!----></span>
+							</div>
+							<div class="column is-1 is-shown-complete has-padding-none">
+								<span class="has-text-success docon docon-check" aria-hidden="true"></span>
+							</div>
+						</div>
+					</li>
+				<!---->
+		</ul>
+	<!----></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="has-border-top has-padding-extra-small has-padding-left-small has-padding-right-medium">
+		<div class="buttons is-right">
+			<button type="button" class="bookmark button is-text has-text-primary has-inner-focus is-small has-margin-right-none" data-bi-name="bookmark" data-list-item-title="핵심 Azure 아키텍처 구성 요소 설명" data-list-item-url="/learn/modules/azure-architecture-fundamentals/" data-list-type="bookmarks" aria-pressed="false" title="핵심 Azure 아키텍처 구성 요소 설명의 책갈피 추가">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-single-bookmark"></span>
+				</span>
+			</button>
+			<button type="button" class="collection button is-text has-text-primary has-inner-focus is-small has-margin-right-none" data-bi-name="collection" data-list-item-title="핵심 Azure 아키텍처 구성 요소 설명" data-list-item-url="/learn/modules/azure-architecture-fundamentals/" data-list-type="collection" aria-pressed="false" title="컬렉션에 핵심 Azure 아키텍처 구성 요소 설명 추가">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-circle-addition"></span>
+				</span>
+			</button>
+		</div>
+	</div>
+</div>
+	</div>
+
+</div>
+						<!-- </content> -->
+
+						</main>
+
+						<!-- page rating section -->
+						<!-- end page rating section -->
+
+
+						<!-- recommendations section -->
+						<!-- end recommendations section -->
+
+						<!-- feedback section -->
+						<!-- end feedback section -->
+
+						<!-- feedback report section -->
+						<!-- end feedback report section -->
+
+						<div class="footerContainer is-visible-interactive has-default-focus  has-border-top has-margin-none">
+
+
+
+	<footer id="footer-interactive" data-bi-name="footer" class="footer-layout">
+
+    <div class="is-flex is-full-height has-padding-right-extra-large-desktop">
+			<a data-mscc-ic="false" class="locale-selector-link has-flex-shrink-none" href="https://docs.microsoft.com/ko-kr/locale?target=https://docs.microsoft.com/ko-kr/learn/paths/az-900-describe-cloud-concepts/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813" data-bi-name="select-locale"><span class="icon docon docon-world is-size-large has-margin-right-small" aria-hidden="true"></span><span class="local-selector-link-text">한국어</span></a>
+		<div class="has-margin-left-medium has-margin-right-medium has-flex-shrink-none">
+<div class="dropdown has-caret-up">
+	<button class="dropdown-trigger button is-transparent is-small is-icon-only-touch has-inner-focus theme-dropdown-trigger" aria-controls="theme-menu-interactive" aria-expanded="false" title="테마" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span>테마</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu-interactive" role="menu">
+		<ul class="theme-selector has-padding-small">
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start is-selected" data-theme-to="light" aria-pressed="true">
+					<span class="theme-light has-margin-right-small">
+						<span class="theme-selector-icon css-variable-support has-border is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+밝음					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start" data-theme-to="dark" aria-pressed="false">
+					<span class="theme-dark has-margin-right-small">
+						<span class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+어두움					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start" data-theme-to="high-contrast" aria-pressed="false">
+					<span class="theme-high-contrast has-margin-right-small">
+						<span class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+고대비					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>		</div>
+	</div>
+    <ul class="links" data-bi-name="footerlinks">
+		<li class="manage-cookies-holder" hidden=""></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/ko-kr/previous-versions/" data-bi-name="archivelink">이전 버전 문서</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/ko-kr/teamblog" data-bi-name="bloglink">블로그</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/ko-kr/contribute" data-bi-name="contributorGuide">참가</a></li>
+				<li><a class="has-text-weight-semibold" data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">개인정보처리방침</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/ko-kr/legal/termsofuse" data-bi-name="termsofuse">사용 조건</a></li>
+			<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">상표</a></li>
+		<li>© Microsoft 2021</li>
+    </ul>
+</footer>
+						</div>
+					</div>
+
+
+					<!--end of div.columns -->
+				</div>
+
+			<!--end of .primary-holder -->
+			</section>
+
+			<aside id="interactive-container" class="interactive-container is-visible-interactive column has-body-background-dark ">
+			</aside>
+		</div>
+
+		<!--end of .mainContainer -->
+	</div>
+
+	<div class="footerContainer has-default-focus is-hidden-interactive  has-border-top has-margin-none">
+
+
+
+	<footer id="footer" data-bi-name="footer" class="footer-layout uhf-container has-padding" role="contentinfo">
+
+    <div class="is-flex is-full-height has-padding-right-extra-large-desktop">
+			<a data-mscc-ic="false" class="locale-selector-link has-flex-shrink-none" href="https://docs.microsoft.com/ko-kr/locale?target=https://docs.microsoft.com/ko-kr/learn/paths/az-900-describe-cloud-concepts/?WT.mc_id=dotnet-21151-cxa&amp;ocid=AID3027813" data-bi-name="select-locale"><span class="icon docon docon-world is-size-large has-margin-right-small" aria-hidden="true"></span><span class="local-selector-link-text">한국어</span></a>
+		<div class="has-margin-left-medium has-margin-right-medium has-flex-shrink-none">
+<div class="dropdown has-caret-up">
+	<button class="dropdown-trigger button is-transparent is-small is-icon-only-touch has-inner-focus theme-dropdown-trigger" aria-controls="theme-menu" aria-expanded="false" title="테마" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span>테마</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu" role="menu">
+		<ul class="theme-selector has-padding-small">
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start is-selected" data-theme-to="light" aria-pressed="true">
+					<span class="theme-light has-margin-right-small">
+						<span class="theme-selector-icon css-variable-support has-border is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+밝음					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start" data-theme-to="dark" aria-pressed="false">
+					<span class="theme-dark has-margin-right-small">
+						<span class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+어두움					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start" data-theme-to="high-contrast" aria-pressed="false">
+					<span class="theme-high-contrast has-margin-right-small">
+						<span class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+고대비					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>		</div>
+	</div>
+    <ul class="links" data-bi-name="footerlinks">
+		<li class="manage-cookies-holder" hidden=""></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/ko-kr/previous-versions/" data-bi-name="archivelink">이전 버전 문서</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/ko-kr/teamblog" data-bi-name="bloglink">블로그</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/ko-kr/contribute" data-bi-name="contributorGuide">참가</a></li>
+				<li><a class="has-text-weight-semibold" data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">개인정보처리방침</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/ko-kr/legal/termsofuse" data-bi-name="termsofuse">사용 조건</a></li>
+			<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">상표</a></li>
+		<li>© Microsoft 2021</li>
+    </ul>
+</footer>
+	</div>
+
+	<div id="action-panel" role="region" aria-label="작업 패널" class="action-panel has-default-focus" tabindex="-1"></div>
+
+
+</body></html>
